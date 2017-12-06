@@ -1,0 +1,4 @@
+/home/drak/Documents/Aula12/PARI/build/CMakeFiles/edit_cache.dir
+/home/drak/Documents/Aula12/PARI/build/CMakeFiles/rebuild_cache.dir
+/home/drak/Documents/Aula12/PARI/build/CMakeFiles/cpfiles.dir
+/home/drak/Documents/Aula12/PARI/build/CMakeFiles/aula12.dir
