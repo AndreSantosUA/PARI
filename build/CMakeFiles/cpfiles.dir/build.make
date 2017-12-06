@@ -55,7 +55,6 @@ include CMakeFiles/cpfiles.dir/progress.make
 
 CMakeFiles/cpfiles:
 	cp /home/drak/Documents/Aula12/PARI/src/*.glade /home/drak/Documents/Aula12/PARI/build
-	cp /home/drak/Documents/Aula12/PARI/src/*.png /home/drak/Documents/Aula12/PARI/build
 
 cpfiles: CMakeFiles/cpfiles
 cpfiles: CMakeFiles/cpfiles.dir/build.make

@@ -81,9 +81,33 @@ CMakeFiles/aula12.dir/src/main.c.o.provides: CMakeFiles/aula12.dir/src/main.c.o.
 CMakeFiles/aula12.dir/src/main.c.o.provides.build: CMakeFiles/aula12.dir/src/main.c.o
 
 
+CMakeFiles/aula12.dir/src/pcolor.c.o: CMakeFiles/aula12.dir/flags.make
+CMakeFiles/aula12.dir/src/pcolor.c.o: ../src/pcolor.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drak/Documents/Aula12/PARI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/aula12.dir/src/pcolor.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/aula12.dir/src/pcolor.c.o   -c /home/drak/Documents/Aula12/PARI/src/pcolor.c
+
+CMakeFiles/aula12.dir/src/pcolor.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/aula12.dir/src/pcolor.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/drak/Documents/Aula12/PARI/src/pcolor.c > CMakeFiles/aula12.dir/src/pcolor.c.i
+
+CMakeFiles/aula12.dir/src/pcolor.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/aula12.dir/src/pcolor.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/drak/Documents/Aula12/PARI/src/pcolor.c -o CMakeFiles/aula12.dir/src/pcolor.c.s
+
+CMakeFiles/aula12.dir/src/pcolor.c.o.requires:
+
+.PHONY : CMakeFiles/aula12.dir/src/pcolor.c.o.requires
+
+CMakeFiles/aula12.dir/src/pcolor.c.o.provides: CMakeFiles/aula12.dir/src/pcolor.c.o.requires
+	$(MAKE) -f CMakeFiles/aula12.dir/build.make CMakeFiles/aula12.dir/src/pcolor.c.o.provides.build
+.PHONY : CMakeFiles/aula12.dir/src/pcolor.c.o.provides
+
+CMakeFiles/aula12.dir/src/pcolor.c.o.provides.build: CMakeFiles/aula12.dir/src/pcolor.c.o
+
+
 CMakeFiles/aula12.dir/src/myf.c.o: CMakeFiles/aula12.dir/flags.make
 CMakeFiles/aula12.dir/src/myf.c.o: ../src/myf.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drak/Documents/Aula12/PARI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/aula12.dir/src/myf.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drak/Documents/Aula12/PARI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/aula12.dir/src/myf.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/aula12.dir/src/myf.c.o   -c /home/drak/Documents/Aula12/PARI/src/myf.c
 
 CMakeFiles/aula12.dir/src/myf.c.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/aula12.dir/src/myf.c.o.provides.build: CMakeFiles/aula12.dir/src/myf.
 
 CMakeFiles/aula12.dir/src/callbacks.c.o: CMakeFiles/aula12.dir/flags.make
 CMakeFiles/aula12.dir/src/callbacks.c.o: ../src/callbacks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drak/Documents/Aula12/PARI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/aula12.dir/src/callbacks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/drak/Documents/Aula12/PARI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/aula12.dir/src/callbacks.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/aula12.dir/src/callbacks.c.o   -c /home/drak/Documents/Aula12/PARI/src/callbacks.c
 
 CMakeFiles/aula12.dir/src/callbacks.c.i: cmake_force
@@ -132,6 +156,7 @@ CMakeFiles/aula12.dir/src/callbacks.c.o.provides.build: CMakeFiles/aula12.dir/sr
 # Object files for target aula12
 aula12_OBJECTS = \
 "CMakeFiles/aula12.dir/src/main.c.o" \
+"CMakeFiles/aula12.dir/src/pcolor.c.o" \
 "CMakeFiles/aula12.dir/src/myf.c.o" \
 "CMakeFiles/aula12.dir/src/callbacks.c.o"
 
@@ -139,11 +164,30 @@ aula12_OBJECTS = \
 aula12_EXTERNAL_OBJECTS =
 
 aula12: CMakeFiles/aula12.dir/src/main.c.o
+aula12: CMakeFiles/aula12.dir/src/pcolor.c.o
 aula12: CMakeFiles/aula12.dir/src/myf.c.o
 aula12: CMakeFiles/aula12.dir/src/callbacks.c.o
 aula12: CMakeFiles/aula12.dir/build.make
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_videostab.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_ts.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_superres.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_ocl.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_gpu.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_contrib.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_legacy.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_video.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_objdetect.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_ml.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_calib3d.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_features2d.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_flann.so.2.4.9
+aula12: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.9
 aula12: CMakeFiles/aula12.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drak/Documents/Aula12/PARI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable aula12"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/drak/Documents/Aula12/PARI/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable aula12"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/aula12.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,6 +196,7 @@ CMakeFiles/aula12.dir/build: aula12
 .PHONY : CMakeFiles/aula12.dir/build
 
 CMakeFiles/aula12.dir/requires: CMakeFiles/aula12.dir/src/main.c.o.requires
+CMakeFiles/aula12.dir/requires: CMakeFiles/aula12.dir/src/pcolor.c.o.requires
 CMakeFiles/aula12.dir/requires: CMakeFiles/aula12.dir/src/myf.c.o.requires
 CMakeFiles/aula12.dir/requires: CMakeFiles/aula12.dir/src/callbacks.c.o.requires
 

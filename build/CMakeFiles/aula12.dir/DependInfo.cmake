@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/drak/Documents/Aula12/PARI/src/callbacks.c" "/home/drak/Documents/Aula12/PARI/build/CMakeFiles/aula12.dir/src/callbacks.c.o"
   "/home/drak/Documents/Aula12/PARI/src/main.c" "/home/drak/Documents/Aula12/PARI/build/CMakeFiles/aula12.dir/src/main.c.o"
   "/home/drak/Documents/Aula12/PARI/src/myf.c" "/home/drak/Documents/Aula12/PARI/build/CMakeFiles/aula12.dir/src/myf.c.o"
+  "/home/drak/Documents/Aula12/PARI/src/pcolor.c" "/home/drak/Documents/Aula12/PARI/build/CMakeFiles/aula12.dir/src/pcolor.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

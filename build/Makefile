@@ -217,6 +217,33 @@ src/myf.c.s:
 	$(MAKE) -f CMakeFiles/aula12.dir/build.make CMakeFiles/aula12.dir/src/myf.c.s
 .PHONY : src/myf.c.s
 
+src/pcolor.o: src/pcolor.c.o
+
+.PHONY : src/pcolor.o
+
+# target to build an object file
+src/pcolor.c.o:
+	$(MAKE) -f CMakeFiles/aula12.dir/build.make CMakeFiles/aula12.dir/src/pcolor.c.o
+.PHONY : src/pcolor.c.o
+
+src/pcolor.i: src/pcolor.c.i
+
+.PHONY : src/pcolor.i
+
+# target to preprocess a source file
+src/pcolor.c.i:
+	$(MAKE) -f CMakeFiles/aula12.dir/build.make CMakeFiles/aula12.dir/src/pcolor.c.i
+.PHONY : src/pcolor.c.i
+
+src/pcolor.s: src/pcolor.c.s
+
+.PHONY : src/pcolor.s
+
+# target to generate assembly for a file
+src/pcolor.c.s:
+	$(MAKE) -f CMakeFiles/aula12.dir/build.make CMakeFiles/aula12.dir/src/pcolor.c.s
+.PHONY : src/pcolor.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -236,6 +263,9 @@ help:
 	@echo "... src/myf.o"
 	@echo "... src/myf.i"
 	@echo "... src/myf.s"
+	@echo "... src/pcolor.o"
+	@echo "... src/pcolor.i"
+	@echo "... src/pcolor.s"
 .PHONY : help
 
 

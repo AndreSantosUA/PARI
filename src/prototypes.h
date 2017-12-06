@@ -1,4 +1,4 @@
-/*File generated automatically in CM-Vostro-5568 by carlosmiranda on Qua Nov 29 12:45:08 WET 2017*/
+/*File generated automatically in drak-VirtualBox by drak on Qua Dez  6 11:39:15 WET 2017*/
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -34,6 +34,10 @@ void goodbye (int xxx);
 int initTimer (void (*func) (int));
 int mulN (int a, int b);
 int myInits ();
+GdkPixbuf *pari_ConvertOpenCv2Gtk (IplImage * image, int dst_w, int dst_h);
+void pari_PerformImageAcquisition (CvCapture * capt);
+void pari_RefreshDrawingArea (char *widgetName, IplImage * img);
+CvCapture *pari_StartImageAcquisition ();
 int performOperation (int (*oper) (int, int), int a, int b);
 int subN (int a, int b);
 void vive (int xxx);
@@ -50,12 +54,8 @@ gboolean p_ForceRefreshDA (gpointer user_data);
 void p_InitTimer ();
 void p_RedrawFreeForm (cairo_t * cr);
 void p_RedrawText (cairo_t * cr);
+gboolean pari_UpdateImageAreas (gpointer data);
 gboolean pari_delete_event (GtkWidget * window, GdkEvent * event, gpointer data);
-/* pcolor.c */
-void HighLightText (void);
-void PrintRedLine (void);
-void ResetTextColors (void);
-void TextColor (int attr, int fg, int bg);
 #ifdef __cplusplus
 }
 #endif

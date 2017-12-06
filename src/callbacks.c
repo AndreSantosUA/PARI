@@ -22,17 +22,6 @@ gboolean pari_delete_event(GtkWidget * window, GdkEvent * event, gpointer data)
 
 
 
-void on_button2_clicked(GtkWidget *widget, gpointer user_data)
-{
-	gboolean a=gtk_switch_get_active( GTK_SWITCH(user_data) ); //user data points to switch
-	if (a == FALSE)
-		printf("Must enable the Quit switch before leaving\n");
-	else
-		gtk_main_quit();
-
-}
-
-
 /**
  * @brief  Function to process the text from entry and label
  *
@@ -40,27 +29,6 @@ void on_button2_clicked(GtkWidget *widget, gpointer user_data)
  * @param user_data - Custom data with a widget ID to fetch some info
  * @return void
  */
-void on_button1_clicked(GtkWidget *widget, gpointer user_data)
-{
-	GtkEntry *ts = GTK_ENTRY(user_data);
-	GtkLabel *lbl= GTK_LABEL(gtk_builder_get_object(builderG,"label3")); //Get some specific label ID to change it
-	if(ts)
-	{
-		char* tss = (char*) gtk_entry_get_text( ts ); //get the text from entry1 widget
-        	
-        	
-		ReverseString( tss);
-		
-		printf("Text available in entry1: %s\n", tss);
-		gtk_label_set_text(lbl, tss);   //set entry text in "label3" widget
-		//gtk_entry_set_text(ts,tss);
-		
-		gtk_widget_hide( user_data );
-		gtk_widget_show( user_data );
-		
-	}
-}
-
 
 
 void on_drawingarea1_draw(GtkWidget *widget, cairo_t *cr, gpointer user_data)
@@ -81,25 +49,7 @@ void on_mouse_button_on(GtkWidget *widget, GdkEventButton *event, gpointer user_
         gtk_widget_queue_draw(widget);   //do not forget to force refresh of the widget - draw
 }
 
-void on_drawingarea1_scroll_event(GtkWidget *widget, GdkEventScroll *event, gpointer user_data)
-{
-        switch(event->direction)
-        {
-                case GDK_SCROLL_UP:
-                        fontSizeFactorG += 0.1;  //increase factor
-                        break;
 
-                case GDK_SCROLL_DOWN:
-                        fontSizeFactorG -= 0.1;;  //decrease factor
-                        break;
-
-                case GDK_SCROLL_LEFT:
-                case GDK_SCROLL_RIGHT:
-                case GDK_SCROLL_SMOOTH:
-                        break;
-        }
-        gtk_widget_queue_draw(widget);  //force redrawing of area
-}
 
 void on_drawingarea1_motion_notify_event(GtkWidget *widget, GdkEventMotion *event, gpointer user_data)
 {
@@ -163,6 +113,9 @@ void p_RedrawFreeForm(cairo_t * cr){
         cairo_stroke(cr);     //"imprime" o path na "surface" (neste caso será a drawing area)
 }
 
+
+
+
 void p_InitTimer()
 {
   //Get widget ID for "drawingarea1"
@@ -185,9 +138,6 @@ gboolean p_ForceRefreshDA(gpointer user_data)
 
         return TRUE;  //continue running
 }
-
-
-
 
 gboolean pari_UpdateImageAreas(gpointer data)
 {

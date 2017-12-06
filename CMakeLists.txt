@@ -28,13 +28,13 @@ pkg_check_modules(GTK REQUIRED gtk+-2.0)
 include_directories(${GTK_INCLUDE_DIRS})
 link_directories(${GTK_LIBRARY_DIRS})
 
-target_link_libraries(${PROG} ${GTK_LIBRARIES} )
+target_link_libraries(${PROG} m ${GTK_LIBRARIES} ${OpenCV_LIBS} )
 
 #-----------------------------------------------------
 # --- add custom mtargets (and dependencies)
 add_custom_target( cpfiles
                 COMMAND cp "${PROJECT_SOURCE_DIR}/src/*.glade" "${PROJECT_BINARY_DIR}"
-                COMMAND cp "${PROJECT_SOURCE_DIR}/src/*.png" "${PROJECT_BINARY_DIR}"
+                #COMMAND cp "${PROJECT_SOURCE_DIR}/src/*.png" "${PROJECT_BINARY_DIR}"
                  )
 
 #Add dependencies

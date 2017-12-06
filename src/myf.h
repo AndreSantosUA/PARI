@@ -19,7 +19,6 @@ typedef struct {
 	int count_parentG = 0;
 	int count_childG = 0;
 	int pid_childG;
-	GtkBuilder *builderG;
 	double xoffG=100;
 	double yoffG=120;
 	free_form ffG={0};   //init count to zero. Do not affect x and y.
@@ -32,7 +31,6 @@ typedef struct {
 	extern int count_parentG;
 	extern int count_childG;
 	extern int pid_childG;
-	extern GtkBuilder *builderG;
 	extern double xoffG;
 	extern double yoffG;
 	extern free_form ffG;

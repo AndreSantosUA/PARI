@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/aula12.dir/src/main.c.o"
+  "CMakeFiles/aula12.dir/src/pcolor.c.o"
   "CMakeFiles/aula12.dir/src/myf.c.o"
   "CMakeFiles/aula12.dir/src/callbacks.c.o"
   "aula12.pdb"
